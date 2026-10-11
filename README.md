@@ -149,27 +149,11 @@ build does expose the equivalent `SoupBaseManager` / `ISoupBase` /
 `ISoupBaseRender` API, so this is portable rather than blocked — it was simply
 not ported.
 
-## Not yet verified
+## Not yet checked in game
 
-The only recorded run of this port is a **dedicated server**, so every
-client-side path is unverified: the config screen, the JEI info pages, the
-lifesteal heart flash, the two dynamic-light integrations, the water-surface
-collision box, and the air-swimming local-player mixin. A single client run
-would settle all of them.
-
-## Repository layout notes
-
-- The real project root is nested one level down, inside a same-named folder;
-  the outer folder holds nothing.
-- `libs/` contains decompiled third-party sources used for reference while
-  porting (JEI, Forge, Kaleidoscope Cookery). It is not part of the build.
-- `disabled-mods/` holds a leftover build of an unrelated sibling project that
-  used to break every dev run by polluting the mixin environment. See the
-  README in that folder.
-- `README.txt`, `changelog.txt`, `CREDITS.txt` and `LICENSE.txt` are untouched
-  Forge MDK files, not this project's documentation.
-- `compile_output.txt` and `debug-sauce-color-not-showing.md` are leftovers from
-  that sibling project and do not describe this mod.
+The client runs (the guide, the JEI pages and the startup self-check all pass),
+but the config screen, the heart flash, the two dynamic-light integrations, the
+water-surface collision box and the air-swimming mixin have not been looked at.
 
 ## License
 
@@ -180,7 +164,7 @@ would settle all of them.
 
 ## Credits
 
-- Programming: Rlosking and jiasudu. Art and the Forge 1.20.1 port: jiasudu.
+- Programming: Rlosking and jiasudu. Forge 1.20.1 port: jiasudu. Art: Rlosking.
 
 - [Kaleidoscope Flora](https://github.com/Rlosking-C/kaleidoscope-flora) by
   Rlosking-C — the upstream mod this port is derived from
