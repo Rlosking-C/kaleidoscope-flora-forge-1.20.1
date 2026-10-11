@@ -8,9 +8,9 @@ modId = "kaleidoscope_flora"
 
 version = "${file.jarVersion}"
 displayName = "Kaleidoscope Flora"
-authors = "Rlosking"
+authors = "Rlosking, jiasudu"
 
-credits = "Art and the Forge 1.20.1 port: jiasudu."
+credits = "Programming: Rlosking and jiasudu. Art and the Forge 1.20.1 port: jiasudu."
 
 logoFile = "logo.png"
 description = '''

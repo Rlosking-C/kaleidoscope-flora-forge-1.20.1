@@ -180,6 +180,8 @@ would settle all of them.
 
 ## Credits
 
+- Programming: Rlosking and jiasudu. Art and the Forge 1.20.1 port: jiasudu.
+
 - [Kaleidoscope Flora](https://github.com/Rlosking-C/kaleidoscope-flora) by
   Rlosking-C — the upstream mod this port is derived from
 - [Kaleidoscope Cookery](https://modrinth.com/mod/kaleidoscope-cookery) —
