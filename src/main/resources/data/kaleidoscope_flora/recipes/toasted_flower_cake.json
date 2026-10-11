@@ -1,0 +1,11 @@
+{
+  "type": "kaleidoscope_cookery:pot",
+  "ingredients": [
+    {
+      "item": "kaleidoscope_flora:raw_flower_cake"
+    }
+  ],
+  "result": {
+    "item": "kaleidoscope_flora:toasted_flower_cake"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "vanillabackport"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "T": {
+            "item": "kaleidoscope_cookery:dried_tea_leaves"
+          },
+          "A": {
+            "item": "minecraft:gold_ingot"
+          },
+          "B": {
+            "item": "minecraft:honey_bottle"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "BTA",
+          "AAA"
+        ],
+        "result": {
+          "item": "kaleidoscope_flora:golden_dandelion_tea_bag"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "vanillabackport"
+        }
+      ],
+      "recipe": {
+        "type": "kaleidoscope_cookery:teapot",
+        "ingredient": {
+          "item": "kaleidoscope_flora:cactus_flower_tea_bag"
+        },
+        "ingredient_count": 1,
+        "result": {
+          "item": "kaleidoscope_flora:fleeting_bloom"
+        },
+        "tea_fluid": "minecraft:water",
+        "time": 240
+      }
+    }
+  ]
+}

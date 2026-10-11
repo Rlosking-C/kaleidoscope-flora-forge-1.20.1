@@ -1,0 +1,57 @@
+modLoader = "javafml"
+
+loaderVersion = "[47,)"
+license = "MIT"
+
+[[mods]]
+modId = "kaleidoscope_flora"
+
+version = "${file.jarVersion}"
+displayName = "Kaleidoscope Flora"
+authors = "Rlosking"
+
+credits = "Art and the Forge 1.20.1 port: jiasudu."
+
+logoFile = "logo.png"
+description = '''
+Brew vanilla flowers into signature teas, each with its own dedicated
+effects. An addon for Kaleidoscope Cookery. Forge 1.20.1 port of the
+NeoForge 1.21.1 original.
+'''
+
+[[dependencies.kaleidoscope_flora]]
+    modId = "forge"
+    mandatory = true
+    versionRange = "[47,)"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.kaleidoscope_flora]]
+    modId = "minecraft"
+    mandatory = true
+    versionRange = "[1.20.1,1.21)"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.kaleidoscope_flora]]
+    modId = "kaleidoscope_cookery"
+    mandatory = true
+    versionRange = "[1.5.0,1.7)"
+    ordering = "AFTER"
+    side = "BOTH"
+
+[[dependencies.kaleidoscope_flora]]
+modId = "patchouli"
+mandatory = false
+versionRange = "[1.20.1-84,)"
+ordering = "NONE"
+side = "BOTH"
+
+
+[[dependencies.kaleidoscope_flora]]
+modId = "vanillabackport"
+mandatory = false
+versionRange = "[1.1.7,)"
+ordering = "NONE"
+side = "BOTH"
+

@@ -1,0 +1,12 @@
+{
+  "type": "kaleidoscope_cookery:teapot",
+  "ingredient": {
+    "item": "kaleidoscope_flora:dandelion_tea_bag"
+  },
+  "ingredient_count": 1,
+  "result": {
+    "item": "kaleidoscope_flora:when_the_wind_rises"
+  },
+  "tea_fluid": "minecraft:milk",
+  "time": 240
+}

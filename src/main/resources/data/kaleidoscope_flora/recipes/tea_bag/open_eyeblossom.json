@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "vanillabackport"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "T": {
+            "item": "kaleidoscope_cookery:dried_tea_leaves"
+          },
+          "A": {
+            "item": "minecraft:open_eyeblossom"
+          },
+          "B": {
+            "item": "minecraft:ghast_tear"
+          },
+          "C": {
+            "item": "minecraft:sugar"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "BTC",
+          "AAA"
+        ],
+        "result": {
+          "item": "kaleidoscope_flora:eyeblossom_tea_bag"
+        }
+      }
+    }
+  ]
+}

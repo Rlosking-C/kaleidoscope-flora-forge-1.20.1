@@ -1,0 +1,9 @@
+{
+  "type": "kaleidoscope_cookery:steamer",
+  "ingredient": {
+    "item": "kaleidoscope_flora:raw_flower_cake"
+  },
+  "result": {
+    "item": "kaleidoscope_flora:dew_flower_cake"
+  }
+}

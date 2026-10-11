@@ -1,0 +1,15 @@
+{
+  "display": {
+    "icon": { "item": "kaleidoscope_flora:when_the_wind_rises" },
+    "title": { "translate": "advancement.kaleidoscope_flora.root" },
+    "description": { "translate": "advancement.kaleidoscope_flora.root.desc" },
+    "background": "kaleidoscope_flora:textures/advancement/background.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "first_sip": { "trigger": "kaleidoscope_flora:drinks_tasted", "conditions": { "count": 1 } }
+  },
+  "requirements": [["first_sip"]]
+}

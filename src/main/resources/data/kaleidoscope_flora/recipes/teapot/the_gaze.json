@@ -1,0 +1,25 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "vanillabackport"
+        }
+      ],
+      "recipe": {
+        "type": "kaleidoscope_cookery:teapot",
+        "ingredient": {
+          "item": "kaleidoscope_flora:eyeblossom_tea_bag"
+        },
+        "ingredient_count": 1,
+        "result": {
+          "item": "kaleidoscope_flora:the_gaze"
+        },
+        "tea_fluid": "minecraft:water",
+        "time": 240
+      }
+    }
+  ]
+}

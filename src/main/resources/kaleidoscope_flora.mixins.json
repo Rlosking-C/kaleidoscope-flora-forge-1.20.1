@@ -1,0 +1,25 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.rlosking.flora.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "kaleidoscope_flora.refmap.json",
+  "mixins": [
+    "PetalFilmMixin",
+    "AirSwimEntityMixin",
+    "AirSwimFluidMixin",
+    "AirSwimPlayerMixin",
+    "PinJumpMixin",
+    "PinHoldMixin",
+    "ToastedHungerMixin"
+  ],
+  "client": [
+    "client.AirSwimLocalPlayerMixin",
+    "client.DoubleJumpLocalPlayerMixin",
+    "client.CreativeModeInventoryScreenAccessor",
+    "client.CreativeModeInventoryScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
