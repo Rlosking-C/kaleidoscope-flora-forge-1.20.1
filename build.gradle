@@ -63,6 +63,7 @@ repositories {
 }
 
 dependencies {
+	runtimeOnly fg.deobf("maven.modrinth:touhou-little-maid:g1SKoGQJ")
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
