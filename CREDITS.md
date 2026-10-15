@@ -13,6 +13,7 @@ built jar.
 
 - **Programming and design: Rlosking, jiasudu.**
 - **Forge 1.20.1 port: jiasudu.**
+- **Art: Potralia** - the tea bag and effect icons
 - **Art: Rlosking** - the drink and flower cake item icons, the placed-cake models
   and block textures, the effect icons and the creative tab's section sprites.
 
