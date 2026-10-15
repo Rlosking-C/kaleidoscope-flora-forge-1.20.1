@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "kaleidoscope_flora:cake_flowers"
+    },
+    {
+      "item": "minecraft:book"
+    }
+  ],
+  "result": {
+    "item": "patchouli:guide_book",
+    "count": 1,
+    "nbt": "{\"patchouli:book\": \"kaleidoscope_flora:flora_guide\"}"
+  }
+}
