@@ -1,6 +1,6 @@
 # Kaleidoscope Flora — Forge 1.20.1 port
 
-> **This is an unofficial port.** The upstream mod is
+> **This is an official port.** The upstream mod is
 > [Kaleidoscope Flora](https://github.com/Rlosking-C/kaleidoscope-flora) by
 > Rlosking-C, built for Minecraft 1.21.1 on NeoForge. This repository carries
 > that mod over to Minecraft 1.20.1 on Forge. Both the code (MIT) and the art
