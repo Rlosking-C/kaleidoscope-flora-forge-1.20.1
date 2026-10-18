@@ -101,7 +101,6 @@
   "effect.kaleidoscope_flora.gaze": "凝视",
   "effect.kaleidoscope_flora.wish": "如愿",
   "effect.kaleidoscope_flora.flower_path": "花开随行",
-  "effect.kaleidoscope_flora.toasted_cake": "焦香",
   "effect.kaleidoscope_flora.dew_cake": "清露",
   "effect.kaleidoscope_flora.pinned": "定身",
   "tooltip.kaleidoscope_flora.when_the_wind_rises.desc": "饮用瞬间清除最多 3 个负面效果，并获得缓降。",
@@ -208,12 +207,13 @@
   "tooltip.kaleidoscope_flora.dew_flower_cake.desc": "食用后 60 秒内可在空中多跳一次；从高处落地掀起冲击波，落得越高伤害越高（最高 20 格），期间免疫摔落伤害。",
   "tooltip.kaleidoscope_flora.tab.drinks": "花饮",
   "tooltip.kaleidoscope_flora.tab.other": "其他",
-  "kaleidoscope_flora.guide.name": "沁香簿",
-  "kaleidoscope_flora.guide.subtitle": "森罗物语：花香四溢手册",
-  "kaleidoscope_flora.guide.landing": "草木有本心，何求美人折。$(br2)—— 张九龄《感遇》",
   "config.kaleidoscope_flora.title": "森罗物语：花香四溢 设置",
   "config.kaleidoscope_flora.effectDurationMultiplier": "效果时长倍率",
   "config.kaleidoscope_flora.auraRangeMultiplier": "光环范围倍率",
   "config.kaleidoscope_flora.vampiricHealPercent": "吸血回复百分比",
-  "config.kaleidoscope_flora.doubleJumpCount": "二段跳次数"
+  "config.kaleidoscope_flora.doubleJumpCount": "二段跳次数",
+  "kaleidoscope_flora.guide.name": "沁香簿",
+  "kaleidoscope_flora.guide.landing": "草木有本心，何求美人折。$(br2)—— 张九龄《感遇》",
+  "kaleidoscope_flora.guide.subtitle": "森罗物语：花香四溢手册",
+  "effect.kaleidoscope_flora.toasted_cake": "焦香"
 }
