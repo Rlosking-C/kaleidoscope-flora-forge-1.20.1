@@ -29,11 +29,6 @@ public final class ModEffects {
     public static final DeferredRegister<MobEffect> EFFECTS =
             DeferredRegister.create(Registries.MOB_EFFECT, KaleidoscopeFlora.MOD_ID);
 
-    /**
-     * Ported from the NeoForge 1.21.1 build: effect durations follow the
-     * {@code effectDurationMultiplier} config entry. Falls back to 1.0 while the
-     * config spec is still loading (e.g. during registry events).
-     */
     public static int scaledTicks(int seconds) {
         double multiplier = FloraConfig.SPEC.isLoaded()
                 ? FloraConfig.effectDurationMultiplier()
@@ -150,10 +145,6 @@ public final class ModEffects {
     public static double pinRingLift(LivingEntity entity) {
         return Math.max(PIN_MIN_LIFT, Math.min(PIN_MAX_LIFT, entity.getBbHeight() * PIN_LIFT_PER_HEIGHT));
     }
-
-    
-
-    
 
     private ModEffects() {
     }

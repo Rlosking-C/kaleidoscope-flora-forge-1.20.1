@@ -6,18 +6,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.loading.FMLEnvironment;
 import org.slf4j.Logger;
 
-/**
- * Startup self-check: turns silent failures into loud ones.
- *
- * <p>Forge discovers event handlers by scanning for
- * {@code @Mod.EventBusSubscriber}. Lose that annotation - a file moved, a
- * merge gone wrong - and the handlers simply never run: no error, no
- * warning, the feature is just gone.</p>
- *
- * <p>This class names every subscriber explicitly and verifies at startup
- * that each still exists and still carries the annotation. Problems are
- * logged at ERROR level, and in development the check throws.</p>
- */
 public final class FloraSelfCheck {
 
     private static final List<String> SUBSCRIBER_CLASSES = List.of(
