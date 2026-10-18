@@ -52,6 +52,16 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber(modid = KaleidoscopeFlora.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public final class HarvestEvents {
 
+    private static boolean chargeHarvestOnce(Player player) {
+        int now = player.tickCount;
+        Integer last = HARVEST_CHARGED_TICK.get(player.getUUID());
+        if (last != null && last == now) {
+            return false;
+        }
+        HARVEST_CHARGED_TICK.put(player.getUUID(), now);
+        return true;
+    }
+
     @SubscribeEvent
     public static void onLivingDrops(LivingDropsEvent event) {
         if (!event.isRecentlyHit()
@@ -94,18 +104,21 @@ public final class HarvestEvents {
             return;
         }
         UUID uuid = breaker.getUUID();
-        int left = HARVEST_CHARGES_LEFT.getOrDefault(uuid, HARVEST_CHARGES);
-        if (left <= 0) {
-            HARVEST_CHARGES_LEFT.remove(uuid);
-            breaker.removeEffect(ModEffects.HARVEST.get());
-            return;
-        }
-        left--;
-        if (left <= 0) {
-            HARVEST_CHARGES_LEFT.remove(uuid);
-            breaker.removeEffect(ModEffects.HARVEST.get());
-        } else {
-            HARVEST_CHARGES_LEFT.put(uuid, left);
+        if (chargeHarvestOnce(breaker)) {
+            int left = HARVEST_CHARGES_LEFT.getOrDefault(uuid, HARVEST_CHARGES);
+            if (left <= 0) {
+                HARVEST_CHARGES_LEFT.remove(uuid);
+        HARVEST_CHARGED_TICK.remove(uuid);
+                breaker.removeEffect(ModEffects.HARVEST.get());
+                return;
+            }
+            left--;
+            if (left <= 0) {
+                HARVEST_CHARGES_LEFT.remove(uuid);
+                breaker.removeEffect(ModEffects.HARVEST.get());
+            } else {
+                HARVEST_CHARGES_LEFT.put(uuid, left);
+            }
         }
         int multiplier = HARVEST_MIN_MULTIPLIER
                 + breaker.getRandom().nextInt(HARVEST_MAX_MULTIPLIER - HARVEST_MIN_MULTIPLIER + 1);
@@ -374,6 +387,7 @@ public final class HarvestEvents {
     private static final int BRUSH_DIG_TICKS = 48;
 
     private static final Map<UUID, Integer> HARVEST_CHARGES_LEFT = new HashMap<>();
+    private static final Map<UUID, Integer> HARVEST_CHARGED_TICK = new HashMap<>();
 
     private static final int HARVEST_CHARGES = 20;
 
