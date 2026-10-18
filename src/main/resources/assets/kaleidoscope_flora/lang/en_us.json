@@ -101,6 +101,7 @@
   "effect.kaleidoscope_flora.gaze": "Gaze",
   "effect.kaleidoscope_flora.wish": "Wish Granted",
   "effect.kaleidoscope_flora.flower_path": "Flower Path",
+  "effect.kaleidoscope_flora.toasted_cake": "Toasted",
   "effect.kaleidoscope_flora.dew_cake": "Dew-Kissed",
   "effect.kaleidoscope_flora.pinned": "Pinned",
   "tooltip.kaleidoscope_flora.when_the_wind_rises.desc": "Instantly clears up to 3 negative effects and grants Slow Falling.",
@@ -207,13 +208,12 @@
   "tooltip.kaleidoscope_flora.dew_flower_cake.desc": "Eaten: 60 s of one extra mid-air jump. Landing from a height raises a shockwave - higher falls hit harder, capped at 20 blocks - and you take no fall damage while it lasts.",
   "tooltip.kaleidoscope_flora.tab.drinks": "Flower Drinks",
   "tooltip.kaleidoscope_flora.tab.other": "Other",
+  "kaleidoscope_flora.guide.name": "The Infusion Ledger",
+  "kaleidoscope_flora.guide.subtitle": "The Kaleidoscope Flora guide",
+  "kaleidoscope_flora.guide.landing": "Plants and trees keep their own nature; why should they beg to be picked?$(br2)- Zhang Jiuling, Gan Yu (Tang)",
   "config.kaleidoscope_flora.title": "Kaleidoscope Flora Settings",
   "config.kaleidoscope_flora.effectDurationMultiplier": "Effect Duration Multiplier",
   "config.kaleidoscope_flora.auraRangeMultiplier": "Aura Range Multiplier",
   "config.kaleidoscope_flora.vampiricHealPercent": "Vampiric Heal Percent",
-  "config.kaleidoscope_flora.doubleJumpCount": "Double Jump Count",
-  "kaleidoscope_flora.guide.name": "The Infusion Ledger",
-  "kaleidoscope_flora.guide.landing": "Plants and trees keep their own nature; why should they beg to be picked?$(br2)- Zhang Jiuling, Gan Yu (Tang)",
-  "kaleidoscope_flora.guide.subtitle": "The Kaleidoscope Flora guide",
-  "effect.kaleidoscope_flora.toasted_cake": "Toasted"
+  "config.kaleidoscope_flora.doubleJumpCount": "Double Jump Count"
 }
