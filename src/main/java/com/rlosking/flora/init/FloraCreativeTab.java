@@ -24,6 +24,7 @@ public final class FloraCreativeTab {
                     .title(Component.translatable("itemGroup.kaleidoscope_flora.flora"))
                     .icon(() -> new ItemStack(TeacupRegistry.getItem(
                             new ResourceLocation(KaleidoscopeFlora.MOD_ID, "when_the_wind_rises"))))
+                    .withTabsBefore(new ResourceLocation("kaleidoscope_cookery", "cookery_main"))
                     .displayItems(FloraCreativeTab::fill)
                     .build());
 

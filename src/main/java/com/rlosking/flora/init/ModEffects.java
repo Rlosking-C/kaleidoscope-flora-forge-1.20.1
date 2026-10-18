@@ -1,5 +1,6 @@
 package com.rlosking.flora.init;
 
+import com.rlosking.flora.FloraConfig;
 import com.rlosking.flora.KaleidoscopeFlora;
 import com.rlosking.flora.effect.DivinationEffect;
 import com.rlosking.flora.effect.DrowsyAuraEffect;
@@ -27,6 +28,18 @@ import net.minecraftforge.registries.RegistryObject;
 public final class ModEffects {
     public static final DeferredRegister<MobEffect> EFFECTS =
             DeferredRegister.create(Registries.MOB_EFFECT, KaleidoscopeFlora.MOD_ID);
+
+    /**
+     * Ported from the NeoForge 1.21.1 build: effect durations follow the
+     * {@code effectDurationMultiplier} config entry. Falls back to 1.0 while the
+     * config spec is still loading (e.g. during registry events).
+     */
+    public static int scaledTicks(int seconds) {
+        double multiplier = FloraConfig.SPEC.isLoaded()
+                ? FloraConfig.effectDurationMultiplier()
+                : 1.0;
+        return Math.max(1, (int) (seconds * 20 * multiplier));
+    }
 
     public static final RegistryObject<PurgeEffect> PURGE =
             EFFECTS.register("purge", PurgeEffect::new);
